@@ -6,11 +6,11 @@ echo "=== Instalacja wordlistów dla Bjorn ==="
 BJORN_DIR="$HOME/Bjorn"
 WORDLIST_DIR="$BJORN_DIR/data/input/dictionary"
 
-echo "[1/8] Tworzenie katalogów..."
-mkdir -p "$WORDLIST_DIR"
+#echo "[1/8] Tworzenie katalogów..."
+#mkdir -p "$WORDLIST_DIR"
 
 echo "[2/8] Instalacja pakietu wordlists (rockyou)..."
-sudo apt update
+#sudo apt update
 sudo apt install -y wordlists
 
 echo "[3/8] Rozpakowywanie rockyou.txt..."
