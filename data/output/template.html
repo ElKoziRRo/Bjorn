@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CyberYanush – Raport</title>
+<style>
+body { font-family: Arial; background: #111; color: #eee; padding: 20px; }
+h1 { color: #4af; }
+h2 { color: #6cf; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+td, th { border: 1px solid #444; padding: 8px; }
+th { background: #222; }
+.success { color: #4f4; }
+.fail { color: #f44; }
+</style>
+</head>
+<body>
+
+<h1>Raport CyberYanush – {{DATE}}</h1>
+
+<h2>Wykryte hosty</h2>
+{{HOSTS}}
+
+<h2>Wykryte usługi</h2>
+{{SERVICES}}
+
+<h2>Wyniki brute-force</h2>
+{{RESULTS}}
+
+<h2>Podsumowanie</h2>
+<p>Łącznie hostów: {{HOST_COUNT}}</p>
+<p>Łącznie usług: {{SERVICE_COUNT}}</p>
+<p>Udane loginy: {{SUCCESS_COUNT}}</p>
+
+</body>
+</html>

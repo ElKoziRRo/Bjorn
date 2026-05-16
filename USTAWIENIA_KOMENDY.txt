@@ -1,0 +1,7 @@
+chmod +x bjorn_auto.sh
+chmod +x generate_host_logins.sh
+
+
+
+crontab -e
+*/30 * * * * /home/pi/Bjorn/bjorn_auto.sh
